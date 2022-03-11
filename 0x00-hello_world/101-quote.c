@@ -2,10 +2,10 @@
 #include <unistd.h>
 
 /**
- * main - this should print "and that piece of art is useful"
+ * main -  print exactly "and that piece of art is useful"
  * - Dora korpar, 2015-10-19,
- *   followed by a new line, to the standard.
- *   return: Always return 0 (Success)
+ *   followed by a new line, to the standard error.
+ *   return: Always 0 (Success)
  */
 int main(void)
 {
