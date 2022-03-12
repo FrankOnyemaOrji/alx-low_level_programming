@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 
 /**
@@ -12,11 +12,11 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if(n > 0)
+	if(n < 0)
 
 	{
 
-		printf("%i Number is Positive",n);
+		printf("%i Number is Negative",n);
 	}
 
 	else if 
@@ -27,9 +27,8 @@ int main(void)
 		}
 
 	else 
-		(n <0)
 
 		{
-			printf("%i Number is Negative\n",n);
+			printf("%i Number is Positive\n",n);
 		}
 
