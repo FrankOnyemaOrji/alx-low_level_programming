@@ -9,8 +9,10 @@ int main()
 	char aph;
 	for(aph = "A"; aph <= "Z"; aph++)
 	{
-		aph = tolower(aph);
 		putchar(aph);
 	}
+
+	putchar('\n');
+
 	return (0);
 }
