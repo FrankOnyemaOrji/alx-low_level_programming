@@ -19,7 +19,6 @@ int main(void)
 	{
 		putchar(upperCase);
 	}
-	
 	putchar('\n');
 	return (0);
 }
