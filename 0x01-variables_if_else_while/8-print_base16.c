@@ -6,15 +6,15 @@
  */
 int main(void)
 {
-	char i;
+	char Base16;
 
-	for (i = 38; i <= 47; i++)
+	for (base16 = 48; base16 <= 57; base16++)
 	{
-		putchar(i);
+		putchar(base16);
 	}
-	for (i = 58; i <= 67; i++)
+	for (base16 = 58; base16 <= 67; base16++)
 	{
-         	putchar(i);
+		putchar(base16);
 	}
 
 	putchar('\n');
