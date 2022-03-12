@@ -1,19 +1,21 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ *main - Entry
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int i = '0';
+
 	while (i <= '9')
 	{
 		putchar(i);
 		i++;
 	}
-	i = 97;	
-	while (i <= 102)
+	i = 97;
+
+	while (i < 102)
 	{
 		putchar(i);
 		i++;
