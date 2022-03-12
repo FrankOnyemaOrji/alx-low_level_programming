@@ -7,7 +7,7 @@
 int main(void)
 {
 	char alphabet;
-	for (alphabet = 'a' alphabet <= 'z'; alphabet++)
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
 		if (alphabet == 'q')
 			continue;
@@ -19,3 +19,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
+}
