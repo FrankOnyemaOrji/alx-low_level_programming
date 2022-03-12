@@ -21,17 +21,15 @@ int main(void)
 
 		printf("%i is negative", n);
 	}
-
 	else if
 		(n == 0)
 		{
 			printf("%i is zero\n", n);
 		}
-
 	else 
 		{
 			printf("%i is positive\n", n);
 		}
-	return 0;
+	return (0);
 }
 
