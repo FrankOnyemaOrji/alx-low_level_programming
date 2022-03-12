@@ -4,22 +4,23 @@
  *
  * Return: Always 0 (success/correct)
  */
+
 int main(void)
 {
-	char upperCase;
 	char lowerCase;
+	char upperCase;
 
-	for (upperCase = "A"; upperCase <= "Z"; upperCase++)
-	{
-		putchar(upperCase);
-	}
-
-	for (lowerCase = "B" lowerCase <= "Y" lowerCase++)
+	for (lowerCase = 'A'; lowerCase <= 'Z'; lowerCase++)
 	{
 		putchar(lowerCase);
 	}
+
+	for (upperCase = 'B' upperCase <= 'Y' upperCase++)
+	{
+		putchar(upperCase);
+	}
 	
-	putchar("\n);
+	putchar("\n");
 
 	return (0);
 }
