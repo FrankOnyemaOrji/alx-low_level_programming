@@ -6,17 +6,20 @@
  */
 int main(void)
 {
-	char base16;
-
-	for (base16 = 48; base16 <= 57; base16++)
+	int i = '0';
+	
+	while (i <= '9')
 	{
-		putchar(base16);
+		putchar(i);
+		i++;
 	}
-	for (base16 = 58; base16 <= 67; base16++)
+	i = 97;
+	
+	while (i <= 102)
 	{
-		putchar(base16);
+		putchar(i);
+		i++;
 	}
-
 	putchar('\n');
 	return (0);
 }
