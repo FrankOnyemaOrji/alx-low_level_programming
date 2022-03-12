@@ -11,6 +11,7 @@ int main(void)
 
 	for (i = 47; i <= 57; i++)
 	{
+		putchar(i);
 		if (i == 57)
 		{
 			break;
