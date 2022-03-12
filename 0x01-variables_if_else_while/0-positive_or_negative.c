@@ -31,4 +31,6 @@ int main(void)
 		{
 			printf("%i Number is Positive\n",n);
 		}
+	return 0;
+}
 
