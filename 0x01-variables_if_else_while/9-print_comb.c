@@ -9,9 +9,9 @@ int main(void)
 {
 	int i;
 
-	for (i = 0; i <= 9; i++)
+	for (i = 47; i <= 57; i++)
 	{
-		if (i == 9)
+		if (i == 57)
 		{
 			break;
 		}
