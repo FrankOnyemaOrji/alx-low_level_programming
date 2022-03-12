@@ -16,21 +16,21 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if(n < 0)
+	if (n < 0)
 	{
 
-		printf("%i Number is negative", n);
+		printf("%i is negative", n);
 	}
 
 	else if
 		(n == 0)
 		{
-			printf("%i Number is zero\n", n);
+			printf("%i is zero\n", n);
 		}
 
 	else 
 		{
-			printf("%i Number is positive\n", n);
+			printf("%i is positive\n", n);
 		}
 	return 0;
 }
