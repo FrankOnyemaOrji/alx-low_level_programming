@@ -6,8 +6,6 @@
  * main - entry Point
  * Return: Alway 0 (Success/correct)
  */
-/* Function -  loops throught the code to return postive, negative and zero number*/
-
 
 int main(void)
 {
