@@ -6,25 +6,10 @@
  */
 int main(void)
 {	
-	int comb = '0';
+	int i;
+	int j;
 
-	while (comb <= '9')
+	for (i = 1; i <= 100; i++)
 	{
-		int combe = '0';
-
-		while (combe <= '9')
-		{
-			if (comb < combe)
-			{
-				putchar(comb);
-				putchar(combe);
-				if (comb == '8' && combe == '9')
-					break;
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
-}
+		for (j = 1; j <= 100; j++)
+		{		
