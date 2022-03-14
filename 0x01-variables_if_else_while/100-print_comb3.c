@@ -1,15 +1,85 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *
+ * 
  * Return: Always 0 (success)
  */
 int main(void)
-{	
+{
 	int i;
 	int j;
 
-	for (i = 1; i <= 100; i++)
+	for (i = 48; i <= 57; i++)
 	{
-		for (j = 1; j <= 100; j++)
-		{		
+		for (j = 48; j <= 57; j++)
+		{
+			if (i < j)
+			{
+				putchar(i);
+				putchar(j);
+				if(i == 8 && j == 9)
+					break;
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}#include <stdio.h>
+/**
+ * main - Entry point
+ * 
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+	int i;
+	int j;
+
+	for (i = 48; i <= 57; i++)
+	{
+		for (j = 48; j <= 57; j++)
+		{
+			if (i < j)
+			{
+				putchar(i);
+				putchar(j);
+				if(i == 8 && j == 9)
+					break;
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}#include <stdio.h>
+/**
+ * main - Entry point
+ * 
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+	int i;
+	int j;
+
+	for (i = 48; i <= 57; i++)
+	{
+		for (j = 48; j <= 57; j++)
+		{
+			if (i < j)
+			{
+				putchar(i);
+				putchar(j);
+				if(i == 8 && j == 9)
+					break;
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}
