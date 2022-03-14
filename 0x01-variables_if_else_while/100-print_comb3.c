@@ -10,7 +10,7 @@ int main(void)
 
 	for(comb = 1; comb <= 100; comb++)
 	{
-		putchar(combe);
+		putchar(comb);
 		putchar(',');
 		putchar(' ');
 
