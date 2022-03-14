@@ -16,9 +16,15 @@ int main(void)
 		{
 			if (comb < combe)
 			{
+				putchar(comb);
+				putchar(combe);
 				if (comb == '8' && combe == '9')
 					break;
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
+	putchar('\n');
+	return (0);
 }
