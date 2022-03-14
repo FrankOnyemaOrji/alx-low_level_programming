@@ -5,27 +5,20 @@
  * Return: Always 0 (success)
  */
 int main(void)
-{
-	int comb;
-	int combe;
+{	
+	int comb = '0';
 
-	for (comb = 0; comb <= 9; comb++)
+	while (comb <= '9')
 	{
-		for ( combe = 0; combe <= 9; combe++)
+		int combe = '0';
+
+		while (combe <= '9')
+		{
+			if (comb < combe)
 			{
-				if (comb < combe)
-				{
-					putchar(comb);
-					putchar(combe);
-					if (comb == 8 && combe == 9)
-					{
-						break;
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				if (comb == '8' && combe == '9')
+					break;
 			}
 		}
-	putchar('\n');
-	return (0);
+	}
 }
