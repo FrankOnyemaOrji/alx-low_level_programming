@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (suceess)
  */
-int main (void) 
+int main(void) 
 {
 	char winners[8] = {'_','p','u','t','c','h','a','r'};
 	int i = 0;
