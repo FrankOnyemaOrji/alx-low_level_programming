@@ -7,10 +7,10 @@
  */
 int main(void) 
 {
-	char winners[] = "_putchar";
+	char str[] = "_putchar";
 	int i;
 
-	while (winners[i])
+	while (str[i])
 	{
 		_putchar(winners[i]);
 		i++;
