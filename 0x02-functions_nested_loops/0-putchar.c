@@ -7,12 +7,12 @@
  */
 int main (void) 
 {
-	winners = "Helborton";
+	winners[8] = "Helborton";
 	int i = 0;
 
 	while(i < 9)
 	{
-		_putchar(winners);
+		_putchar(winners[8]);
 		i++;
 	}
 
