@@ -12,7 +12,7 @@ int main(void)
 
 	while (str[i])
 	{
-		_putchar(winners[i]);
+		_putchar(str[i]);
 		i++;
 	}
 	_putchar('\n');
