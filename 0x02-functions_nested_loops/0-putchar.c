@@ -7,7 +7,7 @@
  */
 int main (void) 
 {
-	winners[8] = "Helborton";
+	char winners[8] = "Helborton";
 	int i = 0;
 
 	while(i < 9)
