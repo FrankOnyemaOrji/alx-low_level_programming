@@ -7,10 +7,10 @@
  */
 int main (void) 
 {
-	char winners[8] = {'_','h','o','l','b','e','r','t','o','n',};
+	char winners[8] = {'_','p','u','t','c','h','a','r'};
 	int i = 0;
 
-	while(i < 10)
+	while(i < 9)
 	{
 		_putchar(winners[8]);
 		i++;
