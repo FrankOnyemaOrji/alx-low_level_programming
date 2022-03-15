@@ -7,12 +7,12 @@
  */
 int main(void) 
 {
-	char winners = {'_','p','u','t','c','h','a','r'};
+	char winners[9]  = "_putchar";
 	int i;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0;i < 9; i++)
 	{
-		_putchar(winners);
+		_putchar(winners[i]);
 	}
 	_putchar('\n');
 	return (0);
