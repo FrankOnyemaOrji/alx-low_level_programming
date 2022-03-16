@@ -2,8 +2,9 @@
 /**
  * print_Alphabet - Entry point
  * Description: print lowercase alphabet
- * Return: Always void (success)
+ * Return:  void (success)
  */
+
 void  print_alphabet(void)
 {
 	char i;
