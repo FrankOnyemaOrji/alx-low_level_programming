@@ -2,7 +2,7 @@
 /**
  * print_last_digit - last digit
  * @n: the int to execute
- * Returen: Always 0
+ * Return: Always 0
  */
 int print_last_digit(int n)
 {
