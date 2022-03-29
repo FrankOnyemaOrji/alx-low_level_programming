@@ -1,13 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-
-/**
- * _strspn - Locates a character in a string
- * @s: This is the main C string to be scanned.
- * @accept: This is the string containing the list of characters to match in s
- * Return: return count
- **/
-
 /**
   *_strpbrk - seraches a string for any of a set of bytes.
   *it locates the first occurence in the string s of any of
