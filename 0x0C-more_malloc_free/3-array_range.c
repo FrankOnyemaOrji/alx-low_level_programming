@@ -1,27 +1,34 @@
-#include "main.h"
+#include <stdlib.h>
 /**
- * array_range - allocates memory for an initialized buffer
- * @min: number of memory bytes
- * @max: number of data type bits
- * Return: return pointer to initialized buffer
- */
+  *array_range - creates an array of integers.
+  *@min: minimum value.
+  *@max: maximum value.
+  *
+  *Return: pointer to newly created array.
+  *NULL if malloc fails.
+  *NULL if min > max.
+  */
 int *array_range(int min, int max)
 {
-int *p;
-unsigned int i;
+	int range, i;
+	int *p;
 
-if (min > max)
-return (NULL);
+	range = 0;
 
-p = malloc(sizeof(int) * (max - min + 1));
-if (p == NULL)
-return (NULL);
+	if (min > max)
+		return (NULL);
 
-for (i = 0; min <= max ; i++)
-{
-p[-i] = min;
-min++;
-}
+	range = ((max + 1) - min);
 
-return (p);
+	p = malloc(range * sizeof(int));
+
+	if (p == NULL)
+		return (NULL);
+
+	for (i = 0; i < range; i++)
+	{
+		*(p + i) = min + i;
+	}
+
+	return (p);
 }
