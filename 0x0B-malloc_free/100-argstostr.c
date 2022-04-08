@@ -1,50 +1,111 @@
-#include "holberton.h"
 #include <stdlib.h>
-/**
-  *argstostr - concatenates all arguments of the program.
-  *@ac: argument count.
-  *@av: pointer to array of size ac.
-  *Return: NULL if ac == 0 or av == null, Pointer to new string.
-  *NULL on fail.
-  */
-char *argstostr(int ac, char **av)
-{
-	int i, j, k, size;
-	char *arg;
+#include <stdio.h>
 
-	size = 0;
-	k = 0;
-	if (ac == 0 || av == NULL)
-		return (NULL);
+/**
+ * wordnos - counts no of words in a given string
+ * @str: pointer to the string
+ *
+ * Return: No. of words in the string (int)
+ */
+int wordnos(char *str)
+{
+	int wordno, i, j;
+
+	wordno = 0;
 	i = 0;
-	while (i < ac)
+	while (*(str + i) != '\0')
 	{
-		j = 0;
-		while (av[i][j])
+		if (*(str + i) != 32 && *(str + i) != '\0')
 		{
-			size++;
-			j++;
+			j = i;
+			while (*(str + j) != 32 && *(str + j) != '\0')
+				j++;
+			wordno++;
+			i = j - 1;
 		}
-		size++;
 		i++;
 	}
-	arg = malloc((sizeof(char) * size) + 1);
-	if (arg == NULL)
-		return (NULL);
+	return (wordno);
+}
+
+/**
+ * cpystr - copies words in string to different elements of 2d array of strings
+ * @s: double pointer to a 2D array of strings
+ * @str: pointer to string whose words are to be copied
+ *
+ * Return: void
+ */
+void cpystr(char **s, char *str)
+{
+	int i, j, l, idx;
+
 	i = 0;
-	while (i < ac)
+	idx = 0;
+	while (*(str + i) != '\0')
 	{
-		j = 0;
-		while (av[i][j])
+		if (*(str + i) != 32 && *(str + i) != '\0')
 		{
-			arg[k] = av[i][j];
-			j++;
-			k++;
+			j = i;
+			l = 0;
+			while (*(str + j) != 32 && *(str + j) != '\0')
+			{
+				s[idx][l] = *(str + j);
+				l++;
+				j++;
+			}
+			s[idx][l] = '\0';
+			idx++;
+			i = j;
 		}
-		arg[k] = '\n';
-		k++;
 		i++;
 	}
-	arg[k] = '\0';
-	return (arg);
+}
+
+/**
+ * strtow - splits a string into words and stores the words in an array
+ * @str: pointer to string
+ *
+ * Return: double pointer to the array containing the words
+ */
+char **strtow(char *str)
+{
+	char **s;
+	int wordno, i, j, k, length, idx;
+
+	if (str == NULL || str[0] == '\0')
+		return (0);
+	wordno = wordnos(str);
+	s = (char **)malloc(sizeof(char *) * (wordno + 1));
+	if (s == 0 || wordno == 0)
+		return (0);
+	i = 0;
+	idx = 0;
+	while (*(str + i) != '\0')
+	{
+		if (*(str + i) != 32 && *(str + i) != '\0')
+		{
+			j = i;
+			length = 0;
+			while (*(str + j) != 32 && *(str + j) != '\0')
+			{
+				length++;
+				printf("Length is %d\n", length);
+				j++;
+			}
+			*(s + idx) = (char *)malloc(sizeof(char) * (length + 1));
+			if (*(s + idx) == 0)
+			{
+				for (k = 0; k < idx; k++)
+					free(*(s + k));
+				free(s);
+				return (0);
+			}
+			idx++;
+			i = j - 1;
+			printf("value of i is %d \n", i);
+		}
+		i++;
+	}
+	cpystr(s, str);
+	return (s);
 }
